@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netric Empire Beauty Salon</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home" class="nav-logo">Netric <span>Empire</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#booking" class="nav-book">Book Now</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home" style="padding:0;">
+        <div class="hero-left">
+            <p class="hero-tag">Premium Beauty Experience</p>
+            <h1 class="hero-title">Where Beauty<br>Meets <em>Empire</em></h1>
+            <p class="hero-subtitle">Expert hair, nails, lashes, and skincare services delivered in a clean,
+                professional environment with quality products and skilled hands.</p>
+            <div class="hero-cta">
+                <a href="#booking" class="btn-primary">Book Appointment</a>
+                <a href="#services" class="btn-outline">View Services</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-image-placeholder">
+                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="70" r="40" stroke="#0A0A0A" stroke-width="1" />
+                    <path d="M60 160 Q100 120 140 160" stroke="#0A0A0A" stroke-width="1" fill="none" />
+                    <path d="M80 70 Q100 50 120 70" stroke="#C9A96E" stroke-width="1.5" fill="none" />
+                </svg>
+            </div>
+            <div class="hours-badge">
+                <div class="day">Mon — Sat</div>
+                <div class="time">8:00am — 8:00pm</div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5★</span>
+                    <span class="stat-label">Rated Service</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Services Offered</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <div class="about reveal" id="about">
+        <div>
+            <p class="section-tag">Our Story</p>
+            <h2 class="section-title">More Than a Salon.<br><em>An Experience.</em></h2>
+            <div class="divider"></div>
+            <p class="about-text">Netric Empire Beauty Salon was built on one belief: every client deserves to feel like
+                royalty. From the moment you walk in, our skilled professionals are dedicated to delivering results that
+                exceed your expectations.</p>
+            <p class="about-text">We combine technical expertise with genuine care, using only quality products in a
+                clean, welcoming environment. Your comfort and satisfaction is always our priority.</p>
+            <div class="about-features">
+                <div class="feature-item">
+                    <div class="feature-icon">✦</div>
+                    <div class="feature-text"><strong>Clean Environment</strong>Hygienic workspace maintained to the
+                        highest standards.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✦</div>
+                    <div class="feature-text"><strong>Skilled Professionals</strong>Trained, experienced, and passionate
+                        stylists.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✦</div>
+                    <div class="feature-text"><strong>Quality Products</strong>We only use products that are safe and
+                        effective.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✦</div>
+                    <div class="feature-text"><strong>Client Satisfaction</strong>Your happiness is our measure of
+                        success.</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-visual">
+            <div class="about-visual-text">Netric<br>Empire</div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="services reveal" id="services">
+        <div class="services-header">
+            <div>
+                <p class="section-tag">What We Offer</p>
+                <h2 class="section-title">Our <em>Services</em></h2>
+                <div class="divider"></div>
+            </div>
+            <a href="#calculator" class="btn-primary" style="background:var(--black);color:#ffffff;">Calculate Your
+                Total</a>
+        </div>
+        <div class="services-grid">
+            <!-- Hair -->
+            <div class="service-category">
+                <span class="service-cat-icon">💇‍♀️</span>
+                <h3 class="service-cat-title">Hair</h3>
+                <ul class="service-items">
+                    <li>
+                        <div>
+                            <div class="service-item-name">Braiding</div>
+                            <div class="service-item-desc">All styles available</div>
+                        </div>
+                        <span class="service-item-price">From GH₵80</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Wig Installation</div>
+                            <div class="service-item-desc">Frontal & closure</div>
+                        </div>
+                        <span class="service-item-price">From GH₵120</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Styling</div>
+                            <div class="service-item-desc">Blowout, press & curl</div>
+                        </div>
+                        <span class="service-item-price">From GH₵60</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Nails -->
+            <div class="service-category">
+                <span class="service-cat-icon">💅</span>
+                <h3 class="service-cat-title">Nails</h3>
+                <ul class="service-items">
+                    <li>
+                        <div>
+                            <div class="service-item-name">Manicure</div>
+                            <div class="service-item-desc">Classic & spa options</div>
+                        </div>
+                        <span class="service-item-price">From GH₵50</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Pedicure</div>
+                            <div class="service-item-desc">Classic & spa options</div>
+                        </div>
+                        <span class="service-item-price">From GH₵60</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Acrylic / Gel</div>
+                            <div class="service-item-desc">Full set & fills</div>
+                        </div>
+                        <span class="service-item-price">From GH₵100</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Lashes -->
+            <div class="service-category">
+                <span class="service-cat-icon">✨</span>
+                <h3 class="service-cat-title">Lashes</h3>
+                <ul class="service-items">
+                    <li>
+                        <div>
+                            <div class="service-item-name">Classic Lashes</div>
+                            <div class="service-item-desc">Natural, everyday look</div>
+                        </div>
+                        <span class="service-item-price">From GH₵80</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Volume Lashes</div>
+                            <div class="service-item-desc">Full & dramatic</div>
+                        </div>
+                        <span class="service-item-price">From GH₵120</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Hybrid Lashes</div>
+                            <div class="service-item-desc">Best of both worlds</div>
+                        </div>
+                        <span class="service-item-price">From GH₵100</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Skincare -->
+            <div class="service-category">
+                <span class="service-cat-icon">🌿</span>
+                <h3 class="service-cat-title">Skincare</h3>
+                <ul class="service-items">
+                    <li>
+                        <div>
+                            <div class="service-item-name">Basic Facial</div>
+                            <div class="service-item-desc">Cleanse, tone & moisturise</div>
+                        </div>
+                        <span class="service-item-price">From GH₵70</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Deep Cleansing</div>
+                            <div class="service-item-desc">Pore treatment</div>
+                        </div>
+                        <span class="service-item-price">From GH₵100</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Waxing -->
+            <div class="service-category">
+                <span class="service-cat-icon">🌸</span>
+                <h3 class="service-cat-title">Waxing</h3>
+                <ul class="service-items">
+                    <li>
+                        <div>
+                            <div class="service-item-name">Eyebrows</div>
+                            <div class="service-item-desc">Shape & define</div>
+                        </div>
+                        <span class="service-item-price">From GH₵30</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Underarms</div>
+                            <div class="service-item-desc">Quick & clean</div>
+                        </div>
+                        <span class="service-item-price">From GH₵40</span>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="service-item-name">Legs</div>
+                            <div class="service-item-desc">Half or full leg</div>
+                        </div>
+                        <span class="service-item-price">From GH₵80</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Packages -->
+            <div class="service-category" style="background:var(--black);">
+                <span class="service-cat-icon">👑</span>
+                <h3 class="service-cat-title" style="color:var(--gold);">Bundle & Save</h3>
+                <ul class="service-items">
+                    <li style="border-color:rgba(255,255,255,0.08);">
+                        <div>
+                            <div class="service-item-name" style="color:rgba(255,255,255,0.8);">The Glow Package</div>
+                            <div class="service-item-desc" style="color:rgba(255,255,255,0.3);">Facial + Nails</div>
+                        </div>
+                        <span class="service-item-price">GH₵180</span>
+                    </li>
+                    <li style="border-color:rgba(255,255,255,0.08);">
+                        <div>
+                            <div class="service-item-name" style="color:rgba(255,255,255,0.8);">The Glam Package</div>
+                            <div class="service-item-desc" style="color:rgba(255,255,255,0.3);">Hair + Lashes + Nails
+                            </div>
+                        </div>
+                        <span class="service-item-price">GH₵350</span>
+                    </li>
+                    <li style="border-color:rgba(255,255,255,0.08);">
+                        <div>
+                            <div class="service-item-name" style="color:rgba(255,255,255,0.8);">Full Empire Day</div>
+                            <div class="service-item-desc" style="color:rgba(255,255,255,0.3);">All services combo</div>
+                        </div>
+                        <span class="service-item-price">GH₵500</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICE CALCULATOR -->
+    <section class="calculator reveal" id="calculator">
+        <p class="section-tag">Build Your Visit</p>
+        <h2 class="section-title" style="color:#ffffff;">Price <em>Calculator</em></h2>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-top:-20px;margin-bottom:10px;">Select your
+            services to see your total instantly</p>
+        <div class="calc-grid">
+            <div class="calc-services" id="calcServices"></div>
+            <div class="calc-summary">
+                <div class="calc-summary-title">Your Selection</div>
+                <div class="selected-services" id="selectedServices">
+                    <p class="calc-empty">No services selected yet.</p>
+                </div>
+                <div class="calc-total-line">
+                    <span class="calc-total-label">Estimated Total</span>
+                    <span class="calc-total-amount"><span class="calc-total-currency">GH₵</span><span
+                            id="totalAmount">0</span></span>
+                </div>
+                <button class="calc-book-btn" onclick="bookFromCalculator()">Book These Services</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking reveal" id="booking">
+        <p class="section-tag">Reserve Your Spot</p>
+        <h2 class="section-title">Book an <em>Appointment</em></h2>
+        <div class="divider"></div>
+        <div class="booking-grid">
+            <div>
+                <div class="form-group">
+                    <label class="form-label">Your Full Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name" id="bookName">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Phone / WhatsApp</label>
+                    <input type="tel" class="form-control" placeholder="+233 ..." id="bookPhone">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Service</label>
+                    <select class="form-control" id="bookService">
+                        <option value="">Select a service</option>
+                        <option>Braiding — from GH₵80</option>
+                        <option>Wig Installation — from GH₵120</option>
+                        <option>Hair Styling — from GH₵60</option>
+                        <option>Manicure — from GH₵50</option>
+                        <option>Pedicure — from GH₵60</option>
+                        <option>Acrylic / Gel Nails — from GH₵100</option>
+                        <option>Classic Lashes — from GH₵80</option>
+                        <option>Volume Lashes — from GH₵120</option>
+                        <option>Hybrid Lashes — from GH₵100</option>
+                        <option>Basic Facial — from GH₵70</option>
+                        <option>Deep Cleansing Facial — from GH₵100</option>
+                        <option>Eyebrow Wax — from GH₵30</option>
+                        <option>Underarm Wax — from GH₵40</option>
+                        <option>Leg Wax — from GH₵80</option>
+                        <option>The Glow Package — GH₵180</option>
+                        <option>The Glam Package — GH₵350</option>
+                        <option>Full Empire Day — GH₵500</option>
+                    </select>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+                    <div class="form-group">
+                        <label class="form-label">Preferred Date</label>
+                        <input type="date" class="form-control" id="bookDate">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Time</label>
+                        <select class="form-control" id="bookTime">
+                            <option value="">Select time</option>
+                            <option>8:00 AM</option>
+                            <option>9:00 AM</option>
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>1:00 PM</option>
+                            <option>2:00 PM</option>
+                            <option>3:00 PM</option>
+                            <option>4:00 PM</option>
+                            <option>5:00 PM</option>
+                            <option>6:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn-primary" onclick="submitBooking()"
+                    style="width:100%;text-align:center;border:none;cursor:pointer;">Send Booking Request</button>
+                <div class="booking-confirm" id="bookingConfirm">
+                    ✓ Booking request sent! We'll confirm via WhatsApp shortly.
+                </div>
+            </div>
+            <div class="booking-info">
+                <div class="booking-info-item">
+                    <div class="booking-info-icon">📍</div>
+                    <div>
+                        <div class="booking-info-label">Location</div>
+                        <div class="booking-info-value">Netric Empire Beauty Salon<br>Ghana</div>
+                    </div>
+                </div>
+                <div class="booking-info-item">
+                    <div class="booking-info-icon">🕐</div>
+                    <div>
+                        <div class="booking-info-label">Opening Hours</div>
+                        <div class="booking-info-value">Monday – Saturday: 8:00am – 8:00pm<br>Sunday: By appointment
+                            only</div>
+                    </div>
+                </div>
+                <div class="booking-info-item">
+                    <div class="booking-info-icon">📱</div>
+                    <div>
+                        <div class="booking-info-label">WhatsApp / Call</div>
+                        <div class="booking-info-value">0598346131</div>
+                    </div>
+                </div>
+                <div class="booking-info-item" style="border:none;">
+                    <div class="booking-info-icon">💳</div>
+                    <div>
+                        <div class="booking-info-label">Payment</div>
+                        <div class="booking-info-value">Cash · Mobile Money · Card</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials reveal">
+        <p class="section-tag">Client Love</p>
+        <h2 class="section-title">What They're <em>Saying</em></h2>
+        <div class="divider"></div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">I always leave feeling like a completely new person. The attention to detail
+                    and the cleanliness of this place is unmatched in Accra.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">A</div>
+                    <div>
+                        <div class="author-name">Abena K.</div>
+                        <div class="author-service">Lashes & Nails</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">My wig installation was absolutely flawless. The stylist knew exactly what I
+                    wanted even before I finished explaining. Will definitely be back!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">E</div>
+                    <div>
+                        <div class="author-name">Efua M.</div>
+                        <div class="author-service">Wig Installation</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">Best facial I have ever had in Ghana. My skin was glowing for weeks after.
+                    The products they use are clearly high quality and the staff are so professional.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">S</div>
+                    <div>
+                        <div class="author-name">Serwaa O.</div>
+                        <div class="author-service">Deep Cleansing Facial</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us reveal">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">The <em>Netric Empire</em> Difference</h2>
+        <div class="divider"></div>
+        <div class="why-grid">
+            <div class="why-item">
+                <span class="why-icon">✨</span>
+                <h3 class="why-title">Professional Service</h3>
+                <p class="why-text">Trained stylists who are passionate about their craft and committed to excellence in
+                    every appointment.</p>
+            </div>
+            <div class="why-item">
+                <span class="why-icon">🧼</span>
+                <h3 class="why-title">Clean & Hygienic</h3>
+                <p class="why-text">We maintain strict hygiene standards. Our workspace is thoroughly cleaned between
+                    every client.</p>
+            </div>
+            <div class="why-item">
+                <span class="why-icon">💎</span>
+                <h3 class="why-title">Quality Products</h3>
+                <p class="why-text">We only use products that are safe, effective, and kind to your hair and skin. No
+                    compromises.</p>
+            </div>
+            <div class="why-item">
+                <span class="why-icon">👑</span>
+                <h3 class="why-title">Client Satisfaction</h3>
+                <p class="why-text">You leave happy or we make it right. Your satisfaction is not just a goal — it is
+                    our standard.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="contact reveal" id="contact">
+        <div class="contact-left">
+            <p class="section-tag">Get In Touch</p>
+            <h2 class="section-title">Visit <em>Us</em></h2>
+            <div class="divider"></div>
+            <div class="contact-links">
+                <a href="tel:+233598346131" class="contact-link">
+                    <div class="contact-link-icon">📞</div>
+                    <div>
+                        <div class="contact-link-label">Call Us</div>
+                        <div class="contact-link-value">0598346131
+                        </div>
+                    </div>
+                </a>
+                <a href="https://wa.me/233598346131" class="contact-link">
+                    <div class="contact-link-icon">💬</div>
+                    <div>
+                        <div class="contact-link-label">WhatsApp</div>
+                        <div class="contact-link-value">Chat with us directly</div>
+                    </div>
+                </a>
+                <a href="https://instagram.com/netricempirebeautysalon" class="contact-link">
+                    <div class="contact-link-icon">📸</div>
+                    <div>
+                        <div class="contact-link-label">Instagram</div>
+                        <div class="contact-link-value">@netricempirebeautysalon</div>
+                    </div>
+                </a>
+                <a href="https://maps.google.com/?q=NETRIC+EMPIRE" target="_blank" class="contact-link">
+                    <div class="contact-link-icon">📍</div>
+                    <div>
+                        <div class="contact-link-label">Location</div>
+                        <div class="contact-link-value">View on Google Maps</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="contact-right">
+            <p class="section-tag">Find Us</p>
+            <h2 class="section-title">Our <em>Location</em></h2>
+            <div class="divider"></div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.3741428356493!2d-0.020088419890791406!3d6.080183920721157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf5f007cf41ad1%3A0x51a28817a094d4b5!2sNETRIC%20EMPIRE!5e0!3m2!1sen!2sgh!4v1778628401534!5m2!1sen!2sgh"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Netric <span>Empire</span></div>
+        <p class="footer-text">© 2025 Netric Empire Beauty Salon. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="https://instagram.com/netricempirebeautysalon" class="social-link">ig</a>
+            <a href="https://wa.me/233598346131" class="social-link">wa</a>
+            <a href="#" class="social-link">fb</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <a href="https://wa.me/233598346131" class="whatsapp-float" target="_blank">💬</a>
+    <a href="#home" class="back-to-top" id="backToTop">↑</a>
+</body>
+
+</html>
